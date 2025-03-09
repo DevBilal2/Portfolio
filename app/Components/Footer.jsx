@@ -46,3 +46,8 @@ const Footer = ({ isDark }) => {
 };
 
 export default Footer;
+
+git init
+git add .
+git commit -m "Initial commit: Next.js portfolio setup"
+git branch -M main
