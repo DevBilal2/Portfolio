@@ -78,24 +78,31 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
-    bgImage: "/work-1.png",
+    title: "Web Game",
+    description: "TicTacToe",
+    bgImage: "/work-1.jpeg",
+    link: "https://tictactoe3ai.netlify.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
+    title: "Portfolio website",
+    description: "Frontend project",
+    bgImage: "/work-2.jpeg",
+
+    link: "https://tictactoe3ai.netlify.app/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
-    bgImage: "/work-3.png",
+    title: "E-commerce(ONG)",
+    description: "Full Stack MERN",
+    bgImage: "/work-3.jpeg",
+
+    link: "",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    title: "Frontend (notlive)",
+    description: "Landing Page ",
+    bgImage: "/work-4.jpeg",
+
+    link: "",
   },
 ];
 
