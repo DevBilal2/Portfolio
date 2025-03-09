@@ -30,7 +30,10 @@ const Footer = ({ isDark }) => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/DevBilal2">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/muhammad-bilal-asif-2365ba326/"
+            >
               linkDin
             </a>
           </li>
