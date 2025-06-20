@@ -41,7 +41,7 @@ const Work = ({ isDark }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className="grid grid-cols-auto my-8 gap-5 dark:text-black"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 dark:text-black"
       >
         {workData.map((project, index) => (
           <a
@@ -56,16 +56,23 @@ const Work = ({ isDark }) => {
               style={{ backgroundImage: `url(${project.bgImage})` }}
               className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
             >
-              <div className=" bg-gray-200 opacity-90 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                <div className="">
-                  <h2 className="font-semibold">{project.title}</h2>
-                  <p className="text-sm text-gray-700">{project.description}</p>
+              <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-11/12 bg-gray-200 opacity-90 rounded-md py-3 px-4 flex items-start justify-between gap-4 transition-all duration-500 group-hover:bottom-7">
+                {/* Text Section */}
+                <div className="flex-1 min-w-0">
+                  <h2 className="font-semibold text-sm sm:text-base break-words leading-tight">
+                    {project.title}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-gray-700 leading-snug break-words">
+                    {project.description}
+                  </p>
                 </div>
-                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+
+                {/* Icon */}
+                <div className="flex-shrink-0 border border-black rounded-full w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
                   <Image
                     src={assets.send_icon}
                     alt="send icon"
-                    className="w-5"
+                    className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
                   />
                 </div>
               </div>
@@ -73,6 +80,7 @@ const Work = ({ isDark }) => {
           </a>
         ))}
       </motion.div>
+
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
