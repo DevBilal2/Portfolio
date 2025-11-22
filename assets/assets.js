@@ -77,60 +77,96 @@ export const assets = {
 };
 
 export const workData = [
+  // Web projects
   {
     title: "Web Game",
     description: "TicTacToe",
     bgImage: "/work-1.jpeg",
     link: "https://tictactoe3ai.netlify.app/",
+    type: "web",
   },
   {
     title: "Portfolio website",
     description: "Frontend project",
     bgImage: "/work-2.jpeg",
-
     link: "https://tictactoe3ai.netlify.app/",
+    type: "web",
   },
   {
     title: "E-commerce(ONG)",
     description: "Full Stack MERN",
     bgImage: "/work-3.jpeg",
-
     link: "",
+    type: "web",
   },
   {
     title: "Frontend (notlive)",
-    description: "Landing Page ",
+    description: "Landing Page",
     bgImage: "/work-4.jpeg",
-
     link: "",
+    type: "web",
+  },
+
+  // Zoho projects
+  {
+    title: "CRM Automation",
+    description: "Customized workflows and automation in Zoho CRM.",
+    bgImage: "/crm.jpeg",
+    link: "",
+    type: "zoho",
+  },
+  {
+    title: "Zoho Creator App",
+    description:
+      "Built a custom business application with Creator and Deluge scripts.",
+    bgImage: "/creator.jpeg",
+    link: "",
+    type: "zoho",
+  },
+  {
+    title: "Desk & Flow Integration",
+    description:
+      "Integrated Zoho Desk with Flow to automate support processes.",
+    bgImage: "/desk.jpeg",
+    link: "",
+    type: "zoho",
+  },
+  {
+    title: "Inventory Management",
+    description: "Automated inventory workflows using Zoho Inventory.",
+    bgImage: "/inven.jpeg",
+    link: "",
+    type: "zoho",
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web development",
-    description: "Web development is the process of building, programming...",
+    icon: assets.ui_icon,
+    title: "Zoho Automation",
+    description:
+      "Customizing Zoho apps, implementing workflows, and automating business processes using Deluge scripting.",
     link: "",
   },
   {
     icon: assets.mobile_icon,
-    title: "Next.js Dev",
+    title: "API & Integrations",
     description:
-      "Next.js dev involves building website that are good for SEO and ...",
+      "Connecting Zoho apps and web projects with REST APIs and third-party services for seamless automation.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.web_icon,
+    title: "Web Development",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Building responsive websites and dashboards using React.js, Next.js, and the MERN stack.",
     link: "",
   },
   {
     icon: assets.graphics_icon,
-    title: "Figma Converting",
-    description: "Creative design solutions from Figma to next.js or Mern ...",
+    title: "UI/UX & Figma Conversions",
+    description:
+      "Turning Figma designs into clean, functional, and responsive web pages.",
     link: "",
   },
 ];
@@ -140,19 +176,20 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    description:
+      "Deluge, Client Script, HTML, CSS, JavaScript React Js, Next Js",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "BSc in Computer Science",
   },
   {
     icon: assets.project_icon,
     iconDark: assets.project_icon_dark,
     title: "Projects",
-    description: "Built more than 3 projects",
+    description: "Built many ZOHO and Website projects",
   },
 ];
 

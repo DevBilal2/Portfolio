@@ -34,7 +34,7 @@ const About = ({ isDark }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-8"
+        className="flex w-full flex-col lg:flex-row items-center gap-16 my-8"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -54,11 +54,13 @@ const About = ({ isDark }) => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
-            I am a Full stack Dev with over a decade of professional expertise
-            in the field. Throughout my career, I have had privilege of
-            collaborating with prestigious organizations, contributing to their
-            success and growth.
+          <p className="text-left max-w-2xl   mb-2 font-Ovo">
+            I am a Zoho Developer skilled in CRM customization, Deluge
+            scripting, and workflow automation across Zoho applications such as
+            Creator, Books, Desk, Inventory and More. I also work with REST APIs
+            and third-party integrations to build complete business automation
+            solutions. Alongside Zoho, I am expanding my expertise in the MERN
+            stack and Next.js for modern web development.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}
@@ -90,7 +92,7 @@ const About = ({ isDark }) => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.3, delay: 0.5 }}
-            className="my-6 text-gray-700 font-Ovo font-bol dark:text-white/80"
+            className="my-1 text-gray-700 font-Ovo font-bol dark:text-white/80"
           >
             Tools I Use
           </motion.h4>

@@ -9,7 +9,7 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="services"
-      className=" w-full px-[12%] py-10 scroll-mt-20"
+      className=" w-full px-[12%] py-10 scroll-mt-16"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
@@ -31,11 +31,13 @@ const Services = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+        className="text-center max-w-2xl mx-auto mt-2 mb-8 font-Ovo"
       >
-        I’m a Full-Stack MERN Developer focusing on Frontend with React.js &
-        Next.js, making dynamic UIs with animations. I also handle APIs and DB
-        integration for seamless solutions.
+        I’m a Zoho Developer specializing in CRM customization, Deluge
+        scripting, and workflow automation across Zoho apps. I also handle REST APIs and third-party
+        integrations to build complete business automation solutions. Alongside
+        Zoho, I am growing my expertise in modern web development using
+        React.js, Next.js, and the MERN stack.
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
