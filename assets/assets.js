@@ -93,10 +93,10 @@ export const workData = [
     type: "web",
   },
   {
-    title: "E-commerce(ONG)",
+    title: "E-commerce(Almost Done)",
     description: "Full Stack MERN",
     bgImage: "/work-3.jpeg",
-    link: "",
+    link: "https://mernecommercestore.netlify.app/",
     type: "web",
   },
   {
