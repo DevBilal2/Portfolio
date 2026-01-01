@@ -1,5 +1,6 @@
 import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "motion/react";
 
@@ -14,12 +15,14 @@ const Work = ({ isDark }) => {
       id="work"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1 }}
       className="w-full px-[12%] py-10 scroll-mt-16"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
@@ -28,6 +31,7 @@ const Work = ({ isDark }) => {
       <motion.h2
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center text-5xl font-Ovo"
       >
@@ -36,6 +40,7 @@ const Work = ({ isDark }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-6 font-Ovo"
       >
@@ -64,15 +69,14 @@ const Work = ({ isDark }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.9, duration: 0.6 }}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 dark:text-black"
       >
         {filteredWork.map((project, index) => (
-          <a
+          <Link
             key={index}
-            href={project.link || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/case-study/${project.id}`}
           >
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -108,13 +112,14 @@ const Work = ({ isDark }) => {
                 </div>
               </div>
             </motion.div>
-          </a>
+          </Link>
         ))}
       </motion.div>
 
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 1.1, duration: 0.5 }}
         href="#"
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-10 hover:bg-lightHover duration-500 hover:scale-105 dark:text-white dark:border-white dark:hover:bg-darkHover"

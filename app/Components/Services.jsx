@@ -7,6 +7,7 @@ const Services = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1 }}
       id="services"
       className=" w-full px-[12%] py-10 scroll-mt-16"
@@ -14,6 +15,7 @@ const Services = () => {
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo"
       >
@@ -22,6 +24,7 @@ const Services = () => {
       <motion.h2
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center  text-5xl font-Ovo"
       >
@@ -30,6 +33,7 @@ const Services = () => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-2 mb-8 font-Ovo"
       >
@@ -42,6 +46,7 @@ const Services = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10"
       >

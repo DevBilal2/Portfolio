@@ -33,6 +33,7 @@ const Contact = ({ isDark }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 1 }}
       id="contact"
       className="dark:bg-none w-full px-[12%] py-10 scroll-mt-10 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
@@ -40,6 +41,7 @@ const Contact = ({ isDark }) => {
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.5 }}
         className="text-center mb-2 mt-2 text-lg font-Ovo"
       >
@@ -48,6 +50,7 @@ const Contact = ({ isDark }) => {
       <motion.h2
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-center  text-5xl font-Ovo"
       >
@@ -56,6 +59,7 @@ const Contact = ({ isDark }) => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-2 font-Ovo"
       >
@@ -65,6 +69,7 @@ const Contact = ({ isDark }) => {
       <motion.form
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.9, duration: 0.5 }}
         className="max-w-2xl mx-auto"
         onSubmit={onSubmit}
@@ -73,6 +78,7 @@ const Contact = ({ isDark }) => {
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ delay: 1.1, duration: 0.6 }}
             name="name"
             type="text"
@@ -83,6 +89,7 @@ const Contact = ({ isDark }) => {
           <motion.input
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ delay: 1.1, duration: 0.6 }}
             name="email"
             type="text"
@@ -94,6 +101,7 @@ const Contact = ({ isDark }) => {
         <motion.textarea
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ delay: 1.1, duration: 0.6 }}
           name="message"
           rows="6"

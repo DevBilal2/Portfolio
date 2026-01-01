@@ -9,6 +9,7 @@ const Header = () => {
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
         <Image
@@ -21,6 +22,7 @@ const Header = () => {
         className="flex items-end gap-2 text-xl md:2xl mb-2 font-Ovo"
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         Hi! I'm Muhammad Bilal{" "}
@@ -29,6 +31,7 @@ const Header = () => {
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-2xl sm:text-4xl lg:text-[50px] font-Ovo"
       >
@@ -37,6 +40,7 @@ const Header = () => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
@@ -47,6 +51,7 @@ const Header = () => {
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 1 }}
           href="#contact"
           className="px-10 py-3 border rounded-full border-white text-white bg-black flex items-center gap-2 dark:bg-transparent"
@@ -57,6 +62,7 @@ const Header = () => {
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 1.2 }}
           href="/res.pdf"
           download
